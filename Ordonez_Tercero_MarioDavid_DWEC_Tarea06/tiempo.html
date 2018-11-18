@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tarea06</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="tiempo.js"></script>
+    <style>
+        h1,
+        h3 {
+            text-align: center;
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        #datosPrevision {
+            height: auto;
+            width: 20%;
+            margin: 0 auto;
+            text-align: center;
+            border-color: antiquewhite;
+        }
+
+        #form {
+            height: auto;
+            width: 20%;
+            margin: 0 auto;
+
+        }
+
+        input {
+            margin: 5px;
+            align-content: center;
+        }
+
+        #error {
+            width: 300px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .rojo {
+            color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>CONSULTE EL TIEMPO EN ESPAÑA</h1>
+    <h3>(Sólo ciudades españolas)</h3>
+    <form action="" id="form">
+        <label>Introduce la ciudad:</label> <input type="text" id="ciudad" name="ciudad">
+        <input type="button" id="hoy" name="hoy" value="Previsión de hoy">
+        <input type="button" id="cuatrodias" name="cuatrodias" value="Previsión de 4 días">
+    </form>
+    <br>
+    <div id="datosPrevision"></div>
+</body>
+
+</html>
